@@ -5,7 +5,7 @@
     "explorerPort": 4200,
     "chainName": "bridgechain",
     "token": "MINE",
-    "database": "ark_bridgechain",
+    "database": "phantom_bridgechain",
     "symbol": "M",
     "prefix": "M",
     "feeSend": 10000000,
@@ -21,6 +21,6 @@
     "updateEpoch": false,
     "rewardHeightStart": 75600,
     "rewardPerBlock": 200000000,
-    "bridgechainPath": "/home/vagrant/ark-bridgechain",
-    "explorerPath": "/home/vagrant/ark-explorer"
+    "bridgechainPath": "/home/vagrant/phantom-bridgechain",
+    "explorerPath": "/home/vagrant/phantom-explorer"
 }

@@ -1,6 +1,6 @@
 {
     "details": {
-        "title": "ARK Bridgechain Deployment script.",
+        "title": "PHANTOM Bridgechain Deployment script.",
         "syntax": "bridgechain.sh [argument] [-option]",
         "author": "Alex Barnsley <alex@ark.io> & Brian Faust <hello@brianfaust.me>",
         "version": "1.1.0"
