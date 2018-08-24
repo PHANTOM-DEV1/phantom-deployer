@@ -14,10 +14,6 @@ nvm install 8.9.1
 sudo apt-get update && sudo apt-get install -y jq
 ```
 
-## Detailed Guide
-
-Follow this [full guide](https://blog.ark.io/ark-deployer-setup-guide-c10825ebb0e4) to get the best out of your Bridgechain.
-
 ## Quick setup with Vagrant
 Deploy a bridgechain and explorer within its own Vagrant setup. This requires vagrant version 2 and up.
 
@@ -43,7 +39,7 @@ Explorer (port forwarded): `http://127.0.0.1:14200/`
 *Note: Change <MACHINE_IP> to your Machine's IP*
 
 ```bash
-./bridgechain.sh install-node --name MyTest --database phantom_mytest --token MYTEST --symbol MT --node-ip <NODE_IP>
+./bridgechain.sh install-node --name MyTest --database phantom_mytest --token MYTEST --symbol MT --node-ip <NODE_IP> --autoinstall-deps
 ./bridgechain.sh start-node --name MyTest
 ```
 
@@ -85,7 +81,7 @@ Explorer (port forwarded): `http://127.0.0.1:14200/`
 *Note: Change <MACHINE_IP> to your Machine's IP*
 
 ```bash
-./bridgechain.sh install-explorer --name MyTest --token MYTEST --explorer-ip <EXPLORER_IP> --node-ip <NODE_IP>
+./bridgechain.sh install-explorer --name MyTest --token MYTEST --explorer-ip <EXPLORER_IP> --node-ip <NODE_IP> --autoinstall-deps
 ./bridgechain.sh start-explorer
 ```
 
@@ -111,7 +107,7 @@ As mentioned in the parameters list, it's possible to pass in a JSON config file
 {
     "nodeIp": "localhost",
     "nodePort": 4100,
-    "explorerIp": "1.2.3.4",
+    "explorerIp": "127.0.0.1",
     "explorerPort": 4200
 }
 ```
